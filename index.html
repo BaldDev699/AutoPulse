@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AutoParts Store | Quality Auto Spares</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>H & L Store</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="#cart">Cart (<span id="cart-count">0</span>)</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Your Trusted Automobile Parts Supplier</h2>
+  <p>Genuine • Affordable • Reliable</p>
+  <a class="cta-btn" href="#products">Shop Now</a>
+</section>
+
+<section class="info">
+  <div>
+    <h3>🚗 Wide Selection</h3>
+    <p>From engine parts to accessories for all car models.</p>
+  </div>
+  <div>
+    <h3>💰 Affordable Prices</h3>
+    <p>Competitive pricing across all our products.</p>
+  </div>
+  <div>
+    <h3>⚡ Fast Delivery</h3>
+    <p>Nationwide delivery within 24–48 hours.</p>
+  </div>
+</section>
+
+<section id="products" class="products">
+  <h2>Featured Products</h2>
+
+  <div class="product-grid">
+    <div class="product">
+      <img src="images/brake-pads.jpg" alt="Brake Pads">
+      <h3>Brake Pads</h3>
+      <p>KES 4,500</p>
+      <button onclick="addToCart('Brake Pads', 4500)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/car-battery.jpg" alt="Car Battery">
+      <h3>Car Battery</h3>
+      <p>KES 12,000</p>
+      <button onclick="addToCart('Car Battery', 12000)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/engine-oil.jpg" alt="Engine Oil">
+      <h3>Engine Oil</h3>
+      <p>KES 3,200</p>
+      <button onclick="addToCart('Engine Oil', 3200)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/alloy-wheel.jpg" alt="Alloy Wheels">
+      <h3>Alloy Wheels</h3>
+      <p>KES 28,000</p>
+      <button onclick="addToCart('Alloy Wheels', 28000)">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<section id="cart" class="cart">
+  <h2>Your Cart</h2>
+  <ul id="cart-items"></ul>
+  <p><strong>Total:</strong> KES <span id="total-price">0</span></p>
+</section>
+
+<footer>
+  <p>&copy; 2026 H & L Store. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
